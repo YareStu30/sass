@@ -2,9 +2,41 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
+.flex-centerxy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-centerx {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  @extend .flex-centerxy;
+  height: 20%;
+  width: 30vw;
+  font-family: "Beau Rivage", cursive;
+  background-color: $variable2;
+  img {
+    height: 25vh;
+  }
+  h5 {
+    color: $variable1;
+  }
+  button {
+    @extend .flex-centerx;
+    border-radius: 2.5rem;
+    background-color: $variable1;
+    padding: 8px;
+    margin-top: 2%;
+    text-align: center;
+    width: 100%;
+    font-size: 100%;
+    color: white;
+  }
+  .card-text {
+    color: white;
+  }
+}
 
-
-
-
-
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import "node_modules/bootstrap/scss/bootstrap.scss";
